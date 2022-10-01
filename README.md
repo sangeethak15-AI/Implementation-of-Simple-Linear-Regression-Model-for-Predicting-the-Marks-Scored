@@ -23,40 +23,51 @@ Program to implement the simple linear regression model for predicting the marks
 Developed by: Sangeetha.K
 RegisterNumber: 212221230085 
 */
-
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-dataset = pd.read_csv('student_scores.csv')
-dataset.head()
-X = dataset.iloc[:,:-1].values
-X
-Y = dataset.iloc[:,1].values
-Y
+import numpy as np
+df=pd.read_csv('student_scores.csv')
+print(df)
+
+X=df.iloc[:,:-1].values
+Y=df.iloc[:,1].values
+print(X,Y)
 from sklearn.model_selection import train_test_split
-X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 1/3,random_state = 0)
+X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=1/3,random_state=0)
 from sklearn.linear_model import LinearRegression
-regressor = LinearRegression()
-regressor.fit(X_train,Y_train)
-Y_pred = regressor.predict(X_test)
-Y_pred
-Y_test
-plt.scatter(X_train,Y_train,color="green")
-plt.plot(X_train,regressor.predict(X_train),color="purple")
-plt.title("Hours vs Scores (Training Set)")
-plt.xlabel("Hours")
-plt.ylabel("Scores")
-plt.show()
-plt.scatter(X_test,Y_test,color="pink")
-plt.plot(X_train,regressor.predict(X_train),color="orange") 
-plt.xlabel("Hours")
-plt.ylabel("Scores")
-plt.show()
+reg=LinearRegression()
+reg.fit(X_train,Y_train)
+
+Y_pred=reg.predict(X_test)
+import matplotlib.pyplot as plt
+from sklearn.metrics import mean_absolute_error , mean_squared_error
+
+plt.scatter(X_train,Y_train,color='green')
+plt.plot(X_train,reg.predict(X_train),color='purple')
+plt.title(' Training set (Hours Vs Scores)')
+plt.xlabel('Hours')
+plt.ylabel('Scores')
+
+plt.scatter(X_test,Y_test,color='green')
+plt.plot(X_test,reg.predict(X_test),color='purple')
+plt.title(' Training set (Hours Vs Scores)')
+plt.xlabel('Hours')
+plt.ylabel('Scores')
+
+mse=mean_squared_error(Y_test,Y_pred)
+print('MSE = ',mse)
+mae=mean_absolute_error(Y_test,Y_pred)
+print('MAE = ',mae)
+rmse=np.sqrt(mse)
+print('RMSE = ',rmse)
+
 ```
 
 ## Output:
+![mx1](https://user-images.githubusercontent.com/93992063/193417358-a73ad98c-ed06-4fe7-b82e-b59476894ff8.png)
+![mx2](https://user-images.githubusercontent.com/93992063/193417370-46219869-66de-41d7-9ebe-01759e249799.png)
 
 ![output1](https://user-images.githubusercontent.com/93992063/193417133-86cce099-c86c-4dea-8782-99f556a686e1.png)
+![mx5](https://user-images.githubusercontent.com/93992063/193417404-13f82485-76af-4760-b5b1-1f313257a85e.png)
 
 
 ## Result:
