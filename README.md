@@ -64,9 +64,11 @@ print('RMSE = ',rmse)
 
 ## Output:
 ![mx1](https://user-images.githubusercontent.com/93992063/193417358-a73ad98c-ed06-4fe7-b82e-b59476894ff8.png)
+
 ![mx2](https://user-images.githubusercontent.com/93992063/193417370-46219869-66de-41d7-9ebe-01759e249799.png)
 
 ![output1](https://user-images.githubusercontent.com/93992063/193417133-86cce099-c86c-4dea-8782-99f556a686e1.png)
+
 ![mx5](https://user-images.githubusercontent.com/93992063/193417404-13f82485-76af-4760-b5b1-1f313257a85e.png)
 
 
