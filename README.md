@@ -10,10 +10,15 @@ To write a program to predict the marks scored by a student using the simple lin
 ## Algorithm
 ```
 1.Import the standard Libraries.
+
 2.Set variables for assigning dataset values.
+
 3.Import linear regression from sklearn.
+
 4.Assign the points for representing in the graph
+
 5.Predict the regression for marks by using the representation of the graph.
+
 6.Compare the graphs and hence we obtained the linear regression for the given datas.
 ```
 ## Program:
@@ -63,13 +68,23 @@ print('RMSE = ',rmse)
 ```
 
 ## Output:
-![mx1](https://user-images.githubusercontent.com/93992063/193417358-a73ad98c-ed06-4fe7-b82e-b59476894ff8.png)
+![mx1](https://user-images.githubusercontent.com/93992063/204019608-654d26f1-c81a-44df-b42d-817318f73ef9.png)
 
-![mx2](https://user-images.githubusercontent.com/93992063/193417370-46219869-66de-41d7-9ebe-01759e249799.png)
+![30a](https://user-images.githubusercontent.com/93992063/204019633-5fc697ab-05fb-46a9-bfee-644afde0e55e.png)
 
-![output1](https://user-images.githubusercontent.com/93992063/193417133-86cce099-c86c-4dea-8782-99f556a686e1.png)
+![30b](https://user-images.githubusercontent.com/93992063/204019673-cbeed266-bf04-4b96-8ae0-8d5d3cdbcbb1.png)
 
-![mx5](https://user-images.githubusercontent.com/93992063/193417404-13f82485-76af-4760-b5b1-1f313257a85e.png)
+
+![6](https://user-images.githubusercontent.com/93992063/204019987-20bca8cc-48a2-42ca-b7fa-60383a383946.png)
+
+![mx2](https://user-images.githubusercontent.com/93992063/204019692-0c85bcb7-9046-482e-8673-8e2d88410ac2.png)
+
+![mx3](https://user-images.githubusercontent.com/93992063/204019706-70ebcf35-6912-4b76-84de-d1ce33f7905a.png)
+
+![mx4](https://user-images.githubusercontent.com/93992063/204019738-14cef619-c430-488c-be15-092304272713.png)
+
+![mx5](https://user-images.githubusercontent.com/93992063/204019760-1fa0b638-70b0-4a1b-a686-2f34e9716185.png)
+
 
 
 ## Result:
